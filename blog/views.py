@@ -10,9 +10,9 @@ class PostListView(ListView):
     model = Post
     
 class PostCreateView(CreateView):
-    model: Post
+    model = Post
     fields = "__all__"
-    success_url: reverse_lazy("blog:all")
+    success_url = reverse_lazy("blog:all")
 
 class PostDetailView(DetailView):
     model = Post
